@@ -1,0 +1,10 @@
+[
+  { "id": "brakes", "name": "Brakes", "icon": "disc", "blurb": "Pads, discs & calipers" },
+  { "id": "engine", "name": "Engine", "icon": "cog", "blurb": "Belts, plugs & gaskets" },
+  { "id": "suspension", "name": "Suspension", "icon": "activity", "blurb": "Shocks, springs & arms" },
+  { "id": "lighting", "name": "Lighting", "icon": "lightbulb", "blurb": "Headlights & bulbs" },
+  { "id": "filters", "name": "Filters", "icon": "filter", "blurb": "Oil, air & cabin" },
+  { "id": "oils", "name": "Oils & Fluids", "icon": "droplets", "blurb": "Engine oil & coolant" },
+  { "id": "electrical", "name": "Electrical", "icon": "battery", "blurb": "Batteries & sensors" },
+  { "id": "accessories", "name": "Accessories", "icon": "sparkles", "blurb": "Mats, wipers & care" }
+]

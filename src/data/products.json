@@ -1,0 +1,1574 @@
+[
+ {
+  "id": "brake-pads-front",
+  "name": "Front Brake Pad Set – Ceramic",
+  "brand": "Brembo",
+  "category": "brakes",
+  "price": 59.9,
+  "oldPrice": 79.9,
+  "images": [
+   "/images/products/brake-pads-front-1.jpg",
+   "/images/products/brake-pads-front-2.jpg",
+   "/images/products/brake-pads-front-3.jpg"
+  ],
+  "description": "Front Brake Pad Set – Ceramic by Brembo. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Position": "Front axle",
+   "Material": "Ceramic",
+   "Wear sensor": "Included"
+  },
+  "compatibility": [
+   {
+    "make": "Toyota",
+    "model": "Corolla",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Toyota",
+    "model": "Camry",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Honda",
+    "model": "Civic",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.8,
+  "reviews": [
+   {
+    "author": "Alex M.",
+    "rating": 5,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 5,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 4,
+    "text": "Arrived fast and well packed."
+   }
+  ],
+  "inStock": true,
+  "dealOfDay": true,
+  "alt": "Close-up of a car's red brake caliper and wheel"
+ },
+ {
+  "id": "brake-disc-vented",
+  "name": "Vented Brake Disc (Pair)",
+  "brand": "ATE",
+  "category": "brakes",
+  "price": 89,
+  "images": [
+   "/images/products/brake-disc-vented-1.jpg",
+   "/images/products/brake-disc-vented-2.jpg",
+   "/images/products/brake-disc-vented-3.jpg"
+  ],
+  "description": "Vented Brake Disc (Pair) by ATE. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Diameter": "288 mm",
+   "Type": "Vented",
+   "Position": "Front axle"
+  },
+  "compatibility": [
+   {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Volkswagen",
+    "model": "Passat",
+    "yearFrom": 2012,
+    "yearTo": 2021
+   },
+   {
+    "make": "Volkswagen",
+    "model": "Polo",
+    "yearFrom": 2014,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.6,
+  "reviews": [
+   {
+    "author": "Priya S.",
+    "rating": 5,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 5,
+    "text": "Arrived fast and well packed."
+   },
+   {
+    "author": "Lena W.",
+    "rating": 4,
+    "text": "Noticeable improvement after fitting."
+   }
+  ],
+  "inStock": true,
+  "alt": "Close-up of a modern car wheel with yellow brake caliper"
+ },
+ {
+  "id": "brake-pads-rear",
+  "name": "Rear Brake Pad Set",
+  "brand": "Bosch",
+  "category": "brakes",
+  "price": 44.5,
+  "oldPrice": 52,
+  "images": [
+   "/images/products/brake-pads-rear-1.jpg",
+   "/images/products/brake-pads-rear-2.jpg",
+   "/images/products/brake-pads-rear-3.jpg"
+  ],
+  "description": "Rear Brake Pad Set by Bosch. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Position": "Rear axle",
+   "Material": "Semi-metallic"
+  },
+  "compatibility": [
+   {
+    "make": "Ford",
+    "model": "Focus",
+    "yearFrom": 2012,
+    "yearTo": 2020
+   },
+   {
+    "make": "Ford",
+    "model": "Fiesta",
+    "yearFrom": 2012,
+    "yearTo": 2021
+   }
+  ],
+  "rating": 4.5,
+  "reviews": [
+   {
+    "author": "Tom K.",
+    "rating": 5,
+    "text": "Arrived fast and well packed."
+   },
+   {
+    "author": "Lena W.",
+    "rating": 5,
+    "text": "Noticeable improvement after fitting."
+   },
+   {
+    "author": "Carlos R.",
+    "rating": 4,
+    "text": "Exactly as described."
+   }
+  ],
+  "inStock": true,
+  "alt": "Black porsche wheel with bright yellow brake calipers"
+ },
+ {
+  "id": "brake-fluid",
+  "name": "DOT 4 Brake Fluid 1L",
+  "brand": "ATE",
+  "category": "brakes",
+  "price": 12.9,
+  "images": [
+   "/images/products/brake-fluid-1.jpg",
+   "/images/products/brake-fluid-2.jpg",
+   "/images/products/brake-fluid-3.jpg"
+  ],
+  "description": "DOT 4 Brake Fluid 1L by ATE. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Volume": "1 L",
+   "Spec": "DOT 4",
+   "Boiling point": "265 °C"
+  },
+  "compatibility": [],
+  "universal": true,
+  "rating": 4.7,
+  "reviews": [
+   {
+    "author": "Lena W.",
+    "rating": 5,
+    "text": "Noticeable improvement after fitting."
+   },
+   {
+    "author": "Carlos R.",
+    "rating": 5,
+    "text": "Exactly as described."
+   },
+   {
+    "author": "Alex M.",
+    "rating": 4,
+    "text": "Perfect fit, installed in under an hour."
+   }
+  ],
+  "inStock": true,
+  "alt": "A close up of a brake on a vehicle"
+ },
+ {
+  "id": "spark-plugs",
+  "name": "Iridium Spark Plugs (Set of 4)",
+  "brand": "NGK",
+  "category": "engine",
+  "price": 38,
+  "oldPrice": 49,
+  "images": [
+   "/images/products/spark-plugs-1.jpg",
+   "/images/products/spark-plugs-2.jpg",
+   "/images/products/spark-plugs-3.jpg"
+  ],
+  "description": "Iridium Spark Plugs (Set of 4) by NGK. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Electrode": "Iridium",
+   "Gap": "0.8 mm",
+   "Qty": "4"
+  },
+  "compatibility": [
+   {
+    "make": "Toyota",
+    "model": "Corolla",
+    "yearFrom": 2012,
+    "yearTo": 2022,
+    "fuels": [
+     "Petrol 1.6",
+     "Petrol 1.8"
+    ]
+   },
+   {
+    "make": "Honda",
+    "model": "Civic",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Toyota",
+    "model": "Yaris",
+    "yearFrom": 2014,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.9,
+  "reviews": [
+   {
+    "author": "Carlos R.",
+    "rating": 5,
+    "text": "Exactly as described."
+   },
+   {
+    "author": "Alex M.",
+    "rating": 5,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 4,
+    "text": "Great quality for the price."
+   }
+  ],
+  "inStock": true,
+  "alt": "V4 engine pistons and cog on black background. Pistons and crankshaft. Four cylinder engine. V4 Car engine. Concept of modern car engine. 3D rendering"
+ },
+ {
+  "id": "timing-belt-kit",
+  "name": "Timing Belt Kit with Water Pump",
+  "brand": "Gates",
+  "category": "engine",
+  "price": 149,
+  "oldPrice": 189,
+  "images": [
+   "/images/products/timing-belt-kit-1.jpg",
+   "/images/products/timing-belt-kit-2.jpg",
+   "/images/products/timing-belt-kit-3.jpg"
+  ],
+  "description": "Timing Belt Kit with Water Pump by Gates. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Includes": "Belt, tensioner, pump",
+   "Teeth": "144"
+  },
+  "compatibility": [
+   {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "yearFrom": 2012,
+    "yearTo": 2022,
+    "fuels": [
+     "Diesel 2.0 TDI"
+    ]
+   },
+   {
+    "make": "Volkswagen",
+    "model": "Passat",
+    "yearFrom": 2012,
+    "yearTo": 2021,
+    "fuels": [
+     "Diesel 2.0 TDI"
+    ]
+   },
+   {
+    "make": "Ford",
+    "model": "Focus",
+    "yearFrom": 2012,
+    "yearTo": 2020,
+    "fuels": [
+     "Diesel 1.5 TDCi"
+    ]
+   }
+  ],
+  "rating": 4.7,
+  "reviews": [
+   {
+    "author": "Alex M.",
+    "rating": 5,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 5,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 4,
+    "text": "Arrived fast and well packed."
+   }
+  ],
+  "inStock": true,
+  "alt": "a close up of the engine of a car"
+ },
+ {
+  "id": "drive-belt",
+  "name": "Multi-Rib Drive Belt",
+  "brand": "Gates",
+  "category": "engine",
+  "price": 27.5,
+  "images": [
+   "/images/products/drive-belt-1.jpg",
+   "/images/products/drive-belt-2.jpg",
+   "/images/products/drive-belt-3.jpg"
+  ],
+  "description": "Multi-Rib Drive Belt by Gates. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Ribs": "6",
+   "Length": "1795 mm"
+  },
+  "compatibility": [
+   {
+    "make": "BMW",
+    "model": "3 Series",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "BMW",
+    "model": "X3",
+    "yearFrom": 2013,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.4,
+  "reviews": [
+   {
+    "author": "Priya S.",
+    "rating": 4,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 4,
+    "text": "Arrived fast and well packed."
+   },
+   {
+    "author": "Lena W.",
+    "rating": 3,
+    "text": "Noticeable improvement after fitting."
+   }
+  ],
+  "inStock": true,
+  "alt": "A close-up view of a shiny red motorcycle"
+ },
+ {
+  "id": "head-gasket",
+  "name": "Cylinder Head Gasket",
+  "brand": "Valeo",
+  "category": "engine",
+  "price": 64,
+  "images": [
+   "/images/products/head-gasket-1.jpg",
+   "/images/products/head-gasket-2.jpg",
+   "/images/products/head-gasket-3.jpg"
+  ],
+  "description": "Cylinder Head Gasket by Valeo. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Material": "Multi-layer steel"
+  },
+  "compatibility": [
+   {
+    "make": "Ford",
+    "model": "Fiesta",
+    "yearFrom": 2012,
+    "yearTo": 2021,
+    "fuels": [
+     "Petrol 1.25"
+    ]
+   }
+  ],
+  "rating": 4.3,
+  "reviews": [
+   {
+    "author": "Tom K.",
+    "rating": 4,
+    "text": "Arrived fast and well packed."
+   },
+   {
+    "author": "Lena W.",
+    "rating": 4,
+    "text": "Noticeable improvement after fitting."
+   },
+   {
+    "author": "Carlos R.",
+    "rating": 3,
+    "text": "Exactly as described."
+   }
+  ],
+  "inStock": false,
+  "alt": "Rows of car engines with fans and hoses"
+ },
+ {
+  "id": "shock-absorber",
+  "name": "Front Gas Shock Absorber",
+  "brand": "Sachs",
+  "category": "suspension",
+  "price": 96,
+  "oldPrice": 120,
+  "images": [
+   "/images/products/shock-absorber-1.jpg",
+   "/images/products/shock-absorber-2.jpg",
+   "/images/products/shock-absorber-3.jpg"
+  ],
+  "description": "Front Gas Shock Absorber by Sachs. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Type": "Twin-tube gas",
+   "Position": "Front"
+  },
+  "compatibility": [
+   {
+    "make": "Toyota",
+    "model": "Corolla",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Honda",
+    "model": "Accord",
+    "yearFrom": 2013,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.6,
+  "reviews": [
+   {
+    "author": "Lena W.",
+    "rating": 5,
+    "text": "Noticeable improvement after fitting."
+   },
+   {
+    "author": "Carlos R.",
+    "rating": 5,
+    "text": "Exactly as described."
+   },
+   {
+    "author": "Alex M.",
+    "rating": 4,
+    "text": "Perfect fit, installed in under an hour."
+   }
+  ],
+  "inStock": true,
+  "alt": "Close-up of a green coil against a dark blue background"
+ },
+ {
+  "id": "coil-spring",
+  "name": "Front Coil Spring",
+  "brand": "Monroe",
+  "category": "suspension",
+  "price": 52,
+  "images": [
+   "/images/products/coil-spring-1.jpg",
+   "/images/products/coil-spring-2.jpg",
+   "/images/products/coil-spring-3.jpg"
+  ],
+  "description": "Front Coil Spring by Monroe. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Position": "Front",
+   "Load": "Standard"
+  },
+  "compatibility": [
+   {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Volkswagen",
+    "model": "Polo",
+    "yearFrom": 2014,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.4,
+  "reviews": [
+   {
+    "author": "Carlos R.",
+    "rating": 4,
+    "text": "Exactly as described."
+   },
+   {
+    "author": "Alex M.",
+    "rating": 4,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 3,
+    "text": "Great quality for the price."
+   }
+  ],
+  "inStock": true,
+  "alt": "a group of green spirals on a white surface"
+ },
+ {
+  "id": "control-arm",
+  "name": "Lower Control Arm with Bushing",
+  "brand": "Monroe",
+  "category": "suspension",
+  "price": 112,
+  "oldPrice": 139,
+  "images": [
+   "/images/products/control-arm-1.jpg",
+   "/images/products/control-arm-2.jpg",
+   "/images/products/control-arm-3.jpg"
+  ],
+  "description": "Lower Control Arm with Bushing by Monroe. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Position": "Front lower",
+   "Side": "Left"
+  },
+  "compatibility": [
+   {
+    "make": "BMW",
+    "model": "3 Series",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "BMW",
+    "model": "X3",
+    "yearFrom": 2013,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.5,
+  "reviews": [
+   {
+    "author": "Alex M.",
+    "rating": 5,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 5,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 4,
+    "text": "Arrived fast and well packed."
+   }
+  ],
+  "inStock": true,
+  "alt": "Shiny clear spiral abstract object with reflections"
+ },
+ {
+  "id": "stabilizer-link",
+  "name": "Stabilizer Link Kit",
+  "brand": "Sachs",
+  "category": "suspension",
+  "price": 21.9,
+  "images": [
+   "/images/products/stabilizer-link-1.jpg",
+   "/images/products/stabilizer-link-2.jpg",
+   "/images/products/stabilizer-link-3.jpg"
+  ],
+  "description": "Stabilizer Link Kit by Sachs. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Position": "Front",
+   "Thread": "M10"
+  },
+  "compatibility": [
+   {
+    "make": "Ford",
+    "model": "Focus",
+    "yearFrom": 2012,
+    "yearTo": 2020
+   },
+   {
+    "make": "Toyota",
+    "model": "Camry",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.2,
+  "reviews": [
+   {
+    "author": "Priya S.",
+    "rating": 4,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 4,
+    "text": "Arrived fast and well packed."
+   },
+   {
+    "author": "Lena W.",
+    "rating": 3,
+    "text": "Noticeable improvement after fitting."
+   }
+  ],
+  "inStock": true,
+  "alt": "a close-up of a human skeleton"
+ },
+ {
+  "id": "led-headlight",
+  "name": "H7 LED Headlight Bulbs (Pair)",
+  "brand": "Philips",
+  "category": "lighting",
+  "price": 69,
+  "oldPrice": 89,
+  "images": [
+   "/images/products/led-headlight-1.jpg",
+   "/images/products/led-headlight-2.jpg",
+   "/images/products/led-headlight-3.jpg"
+  ],
+  "description": "H7 LED Headlight Bulbs (Pair) by Philips. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Type": "H7 LED",
+   "Output": "6500 K / 2000 lm",
+   "Voltage": "12 V"
+  },
+  "compatibility": [],
+  "universal": true,
+  "rating": 4.8,
+  "reviews": [
+   {
+    "author": "Tom K.",
+    "rating": 5,
+    "text": "Arrived fast and well packed."
+   },
+   {
+    "author": "Lena W.",
+    "rating": 5,
+    "text": "Noticeable improvement after fitting."
+   },
+   {
+    "author": "Carlos R.",
+    "rating": 4,
+    "text": "Exactly as described."
+   }
+  ],
+  "inStock": true,
+  "dealOfDay": true,
+  "alt": "A glowing car headlight with a bright LED strip against a dark background"
+ },
+ {
+  "id": "halogen-bulb",
+  "name": "H4 Halogen Bulb +130% (Pair)",
+  "brand": "Bosch",
+  "category": "lighting",
+  "price": 15.5,
+  "images": [
+   "/images/products/halogen-bulb-1.jpg",
+   "/images/products/halogen-bulb-2.jpg",
+   "/images/products/halogen-bulb-3.jpg"
+  ],
+  "description": "H4 Halogen Bulb +130% (Pair) by Bosch. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Type": "H4",
+   "Wattage": "60/55 W"
+  },
+  "compatibility": [],
+  "universal": true,
+  "rating": 4.5,
+  "reviews": [
+   {
+    "author": "Lena W.",
+    "rating": 5,
+    "text": "Noticeable improvement after fitting."
+   },
+   {
+    "author": "Carlos R.",
+    "rating": 5,
+    "text": "Exactly as described."
+   },
+   {
+    "author": "Alex M.",
+    "rating": 4,
+    "text": "Perfect fit, installed in under an hour."
+   }
+  ],
+  "inStock": true,
+  "alt": "Close-up of a black car's headlight at sunset"
+ },
+ {
+  "id": "tail-light",
+  "name": "Rear Tail Light Assembly",
+  "brand": "Valeo",
+  "category": "lighting",
+  "price": 84,
+  "images": [
+   "/images/products/tail-light-1.jpg",
+   "/images/products/tail-light-2.jpg",
+   "/images/products/tail-light-3.jpg"
+  ],
+  "description": "Rear Tail Light Assembly by Valeo. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Side": "Right",
+   "Bulbs": "Not included"
+  },
+  "compatibility": [
+   {
+    "make": "Honda",
+    "model": "Civic",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Toyota",
+    "model": "Yaris",
+    "yearFrom": 2014,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.1,
+  "reviews": [
+   {
+    "author": "Carlos R.",
+    "rating": 4,
+    "text": "Exactly as described."
+   },
+   {
+    "author": "Alex M.",
+    "rating": 4,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 3,
+    "text": "Great quality for the price."
+   }
+  ],
+  "inStock": true,
+  "alt": "Close-up of a modern car headlight at night"
+ },
+ {
+  "id": "fog-lamp",
+  "name": "Front Fog Lamp",
+  "brand": "Valeo",
+  "category": "lighting",
+  "price": 33,
+  "oldPrice": 41,
+  "images": [
+   "/images/products/fog-lamp-1.jpg",
+   "/images/products/fog-lamp-2.jpg",
+   "/images/products/fog-lamp-3.jpg"
+  ],
+  "description": "Front Fog Lamp by Valeo. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Side": "Left",
+   "Bulb": "H11"
+  },
+  "compatibility": [
+   {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Volkswagen",
+    "model": "Polo",
+    "yearFrom": 2014,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.3,
+  "reviews": [
+   {
+    "author": "Alex M.",
+    "rating": 4,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 4,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 3,
+    "text": "Arrived fast and well packed."
+   }
+  ],
+  "inStock": false,
+  "alt": "Old car's front headlight and bumper in black and white"
+ },
+ {
+  "id": "oil-filter",
+  "name": "Spin-on Oil Filter",
+  "brand": "Mann-Filter",
+  "category": "filters",
+  "price": 9.9,
+  "images": [
+   "/images/products/oil-filter-1.jpg",
+   "/images/products/oil-filter-2.jpg",
+   "/images/products/oil-filter-3.jpg"
+  ],
+  "description": "Spin-on Oil Filter by Mann-Filter. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Type": "Spin-on",
+   "Thread": "M20x1.5"
+  },
+  "compatibility": [
+   {
+    "make": "Toyota",
+    "model": "Corolla",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Toyota",
+    "model": "Yaris",
+    "yearFrom": 2014,
+    "yearTo": 2022
+   },
+   {
+    "make": "Honda",
+    "model": "Civic",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Ford",
+    "model": "Fiesta",
+    "yearFrom": 2012,
+    "yearTo": 2021
+   }
+  ],
+  "rating": 4.8,
+  "reviews": [
+   {
+    "author": "Priya S.",
+    "rating": 5,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 5,
+    "text": "Arrived fast and well packed."
+   },
+   {
+    "author": "Lena W.",
+    "rating": 4,
+    "text": "Noticeable improvement after fitting."
+   }
+  ],
+  "inStock": true,
+  "alt": "A yellow pleated oil filter with gray ends"
+ },
+ {
+  "id": "air-filter",
+  "name": "Engine Air Filter",
+  "brand": "Mann-Filter",
+  "category": "filters",
+  "price": 16.5,
+  "images": [
+   "/images/products/air-filter-1.jpg",
+   "/images/products/air-filter-2.jpg",
+   "/images/products/air-filter-3.jpg"
+  ],
+  "description": "Engine Air Filter by Mann-Filter. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Type": "Panel",
+   "Length": "271 mm"
+  },
+  "compatibility": [
+   {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Volkswagen",
+    "model": "Passat",
+    "yearFrom": 2012,
+    "yearTo": 2021
+   },
+   {
+    "make": "Ford",
+    "model": "Focus",
+    "yearFrom": 2012,
+    "yearTo": 2020
+   }
+  ],
+  "rating": 4.6,
+  "reviews": [
+   {
+    "author": "Tom K.",
+    "rating": 5,
+    "text": "Arrived fast and well packed."
+   },
+   {
+    "author": "Lena W.",
+    "rating": 5,
+    "text": "Noticeable improvement after fitting."
+   },
+   {
+    "author": "Carlos R.",
+    "rating": 4,
+    "text": "Exactly as described."
+   }
+  ],
+  "inStock": true,
+  "alt": "a close up of the front of a classic car"
+ },
+ {
+  "id": "cabin-filter",
+  "name": "Activated Carbon Cabin Filter",
+  "brand": "Bosch",
+  "category": "filters",
+  "price": 14.9,
+  "oldPrice": 19.9,
+  "images": [
+   "/images/products/cabin-filter-1.jpg",
+   "/images/products/cabin-filter-2.jpg",
+   "/images/products/cabin-filter-3.jpg"
+  ],
+  "description": "Activated Carbon Cabin Filter by Bosch. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Type": "Carbon",
+   "Size": "254×186×30 mm"
+  },
+  "compatibility": [
+   {
+    "make": "BMW",
+    "model": "3 Series",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Toyota",
+    "model": "Camry",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Honda",
+    "model": "Accord",
+    "yearFrom": 2013,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.7,
+  "reviews": [
+   {
+    "author": "Lena W.",
+    "rating": 5,
+    "text": "Noticeable improvement after fitting."
+   },
+   {
+    "author": "Carlos R.",
+    "rating": 5,
+    "text": "Exactly as described."
+   },
+   {
+    "author": "Alex M.",
+    "rating": 4,
+    "text": "Perfect fit, installed in under an hour."
+   }
+  ],
+  "inStock": true,
+  "alt": "a close up of a metal object with a blurry background"
+ },
+ {
+  "id": "fuel-filter",
+  "name": "Inline Diesel Fuel Filter",
+  "brand": "Mann-Filter",
+  "category": "filters",
+  "price": 24,
+  "images": [
+   "/images/products/fuel-filter-1.jpg",
+   "/images/products/fuel-filter-2.jpg",
+   "/images/products/fuel-filter-3.jpg"
+  ],
+  "description": "Inline Diesel Fuel Filter by Mann-Filter. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Fuel": "Diesel"
+  },
+  "compatibility": [
+   {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "yearFrom": 2012,
+    "yearTo": 2022,
+    "fuels": [
+     "Diesel 2.0 TDI"
+    ]
+   },
+   {
+    "make": "BMW",
+    "model": "X3",
+    "yearFrom": 2013,
+    "yearTo": 2022,
+    "fuels": [
+     "Diesel 2.0"
+    ]
+   }
+  ],
+  "rating": 4.4,
+  "reviews": [
+   {
+    "author": "Carlos R.",
+    "rating": 4,
+    "text": "Exactly as described."
+   },
+   {
+    "author": "Alex M.",
+    "rating": 4,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 3,
+    "text": "Great quality for the price."
+   }
+  ],
+  "inStock": true,
+  "alt": "A yellow pleated oil filter with gray ends"
+ },
+ {
+  "id": "engine-oil-5w30",
+  "name": "Synthetic Engine Oil 5W-30 5L",
+  "brand": "Castrol",
+  "category": "oils",
+  "price": 44.9,
+  "oldPrice": 58,
+  "images": [
+   "/images/products/engine-oil-5w30-1.jpg",
+   "/images/products/engine-oil-5w30-2.jpg",
+   "/images/products/engine-oil-5w30-3.jpg"
+  ],
+  "description": "Synthetic Engine Oil 5W-30 5L by Castrol. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Viscosity": "5W-30",
+   "Volume": "5 L",
+   "Spec": "ACEA C3"
+  },
+  "compatibility": [],
+  "universal": true,
+  "rating": 4.9,
+  "reviews": [
+   {
+    "author": "Alex M.",
+    "rating": 5,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 5,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 4,
+    "text": "Arrived fast and well packed."
+   }
+  ],
+  "inStock": true,
+  "dealOfDay": true,
+  "alt": "Coins pouring into a clear jerrycan filled with liquid"
+ },
+ {
+  "id": "engine-oil-0w20",
+  "name": "Full Synthetic 0W-20 4L",
+  "brand": "Castrol",
+  "category": "oils",
+  "price": 39,
+  "images": [
+   "/images/products/engine-oil-0w20-1.jpg",
+   "/images/products/engine-oil-0w20-2.jpg",
+   "/images/products/engine-oil-0w20-3.jpg"
+  ],
+  "description": "Full Synthetic 0W-20 4L by Castrol. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Viscosity": "0W-20",
+   "Volume": "4 L"
+  },
+  "compatibility": [
+   {
+    "make": "Toyota",
+    "model": "Corolla",
+    "yearFrom": 2012,
+    "yearTo": 2022,
+    "fuels": [
+     "Hybrid 1.8"
+    ]
+   },
+   {
+    "make": "Toyota",
+    "model": "Camry",
+    "yearFrom": 2012,
+    "yearTo": 2022,
+    "fuels": [
+     "Hybrid 2.5"
+    ]
+   },
+   {
+    "make": "Honda",
+    "model": "Accord",
+    "yearFrom": 2013,
+    "yearTo": 2022,
+    "fuels": [
+     "Hybrid 2.0"
+    ]
+   }
+  ],
+  "rating": 4.7,
+  "reviews": [
+   {
+    "author": "Priya S.",
+    "rating": 5,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 5,
+    "text": "Arrived fast and well packed."
+   },
+   {
+    "author": "Lena W.",
+    "rating": 4,
+    "text": "Noticeable improvement after fitting."
+   }
+  ],
+  "inStock": true,
+  "alt": "a close up of a liquid pouring from a spoon"
+ },
+ {
+  "id": "coolant",
+  "name": "Antifreeze Coolant Concentrate 1.5L",
+  "brand": "Valeo",
+  "category": "oils",
+  "price": 13.5,
+  "images": [
+   "/images/products/coolant-1.jpg",
+   "/images/products/coolant-2.jpg",
+   "/images/products/coolant-3.jpg"
+  ],
+  "description": "Antifreeze Coolant Concentrate 1.5L by Valeo. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Volume": "1.5 L",
+   "Colour": "Pink G12+"
+  },
+  "compatibility": [],
+  "universal": true,
+  "rating": 4.5,
+  "reviews": [
+   {
+    "author": "Tom K.",
+    "rating": 5,
+    "text": "Arrived fast and well packed."
+   },
+   {
+    "author": "Lena W.",
+    "rating": 5,
+    "text": "Noticeable improvement after fitting."
+   },
+   {
+    "author": "Carlos R.",
+    "rating": 4,
+    "text": "Exactly as described."
+   }
+  ],
+  "inStock": true,
+  "alt": "a bottle of red liquid"
+ },
+ {
+  "id": "gear-oil",
+  "name": "Manual Gearbox Oil 75W-80 1L",
+  "brand": "Castrol",
+  "category": "oils",
+  "price": 18.9,
+  "oldPrice": 22.5,
+  "images": [
+   "/images/products/gear-oil-1.jpg",
+   "/images/products/gear-oil-2.jpg",
+   "/images/products/gear-oil-3.jpg"
+  ],
+  "description": "Manual Gearbox Oil 75W-80 1L by Castrol. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Viscosity": "75W-80",
+   "Volume": "1 L"
+  },
+  "compatibility": [],
+  "universal": true,
+  "rating": 4.4,
+  "reviews": [
+   {
+    "author": "Lena W.",
+    "rating": 4,
+    "text": "Noticeable improvement after fitting."
+   },
+   {
+    "author": "Carlos R.",
+    "rating": 4,
+    "text": "Exactly as described."
+   },
+   {
+    "author": "Alex M.",
+    "rating": 3,
+    "text": "Perfect fit, installed in under an hour."
+   }
+  ],
+  "inStock": true,
+  "alt": "a group of bottles"
+ },
+ {
+  "id": "battery-70ah",
+  "name": "Car Battery 70Ah 640A",
+  "brand": "Varta",
+  "category": "electrical",
+  "price": 119,
+  "oldPrice": 139,
+  "images": [
+   "/images/products/battery-70ah-1.jpg",
+   "/images/products/battery-70ah-2.jpg",
+   "/images/products/battery-70ah-3.jpg"
+  ],
+  "description": "Car Battery 70Ah 640A by Varta. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Capacity": "70 Ah",
+   "CCA": "640 A",
+   "Terminal": "Right +"
+  },
+  "compatibility": [],
+  "universal": true,
+  "rating": 4.8,
+  "reviews": [
+   {
+    "author": "Carlos R.",
+    "rating": 5,
+    "text": "Exactly as described."
+   },
+   {
+    "author": "Alex M.",
+    "rating": 5,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 4,
+    "text": "Great quality for the price."
+   }
+  ],
+  "inStock": true,
+  "alt": "Closeup of various capacitors on white background"
+ },
+ {
+  "id": "o2-sensor",
+  "name": "Lambda / Oxygen Sensor",
+  "brand": "Bosch",
+  "category": "electrical",
+  "price": 72,
+  "images": [
+   "/images/products/o2-sensor-1.jpg",
+   "/images/products/o2-sensor-2.jpg",
+   "/images/products/o2-sensor-3.jpg"
+  ],
+  "description": "Lambda / Oxygen Sensor by Bosch. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Position": "Upstream",
+   "Wires": "4"
+  },
+  "compatibility": [
+   {
+    "make": "Ford",
+    "model": "Focus",
+    "yearFrom": 2012,
+    "yearTo": 2020,
+    "fuels": [
+     "Petrol 1.0 EcoBoost"
+    ]
+   },
+   {
+    "make": "Toyota",
+    "model": "Corolla",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.5,
+  "reviews": [
+   {
+    "author": "Alex M.",
+    "rating": 5,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 5,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 4,
+    "text": "Arrived fast and well packed."
+   }
+  ],
+  "inStock": true,
+  "alt": "a close up of the front grille of a car"
+ },
+ {
+  "id": "alternator",
+  "name": "Alternator 120A",
+  "brand": "Valeo",
+  "category": "electrical",
+  "price": 199,
+  "oldPrice": 249,
+  "images": [
+   "/images/products/alternator-1.jpg",
+   "/images/products/alternator-2.jpg",
+   "/images/products/alternator-3.jpg"
+  ],
+  "description": "Alternator 120A by Valeo. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Output": "120 A",
+   "Voltage": "12 V"
+  },
+  "compatibility": [
+   {
+    "make": "Volkswagen",
+    "model": "Passat",
+    "yearFrom": 2012,
+    "yearTo": 2021
+   },
+   {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.3,
+  "reviews": [
+   {
+    "author": "Priya S.",
+    "rating": 4,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 4,
+    "text": "Arrived fast and well packed."
+   },
+   {
+    "author": "Lena W.",
+    "rating": 3,
+    "text": "Noticeable improvement after fitting."
+   }
+  ],
+  "inStock": false,
+  "alt": "a close up of an orange and black clock"
+ },
+ {
+  "id": "wiper-blades",
+  "name": "Flat Wiper Blade Set",
+  "brand": "Bosch",
+  "category": "accessories",
+  "price": 23.9,
+  "images": [
+   "/images/products/wiper-blades-1.jpg",
+   "/images/products/wiper-blades-2.jpg",
+   "/images/products/wiper-blades-3.jpg"
+  ],
+  "description": "Flat Wiper Blade Set by Bosch. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Sizes": "600 / 450 mm",
+   "Type": "Flat"
+  },
+  "compatibility": [],
+  "universal": true,
+  "rating": 4.7,
+  "reviews": [
+   {
+    "author": "Tom K.",
+    "rating": 5,
+    "text": "Arrived fast and well packed."
+   },
+   {
+    "author": "Lena W.",
+    "rating": 5,
+    "text": "Noticeable improvement after fitting."
+   },
+   {
+    "author": "Carlos R.",
+    "rating": 4,
+    "text": "Exactly as described."
+   }
+  ],
+  "inStock": true,
+  "alt": "a variety of tools sitting on top of a wooden table"
+ },
+ {
+  "id": "floor-mats",
+  "name": "All-Weather Floor Mat Set",
+  "brand": "Sachs",
+  "category": "accessories",
+  "price": 49,
+  "oldPrice": 65,
+  "images": [
+   "/images/products/floor-mats-1.jpg",
+   "/images/products/floor-mats-2.jpg",
+   "/images/products/floor-mats-3.jpg"
+  ],
+  "description": "All-Weather Floor Mat Set by Sachs. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Material": "TPE",
+   "Pieces": "4"
+  },
+  "compatibility": [
+   {
+    "make": "Toyota",
+    "model": "Corolla",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Honda",
+    "model": "Civic",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   },
+   {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "yearFrom": 2012,
+    "yearTo": 2022
+   }
+  ],
+  "rating": 4.4,
+  "reviews": [
+   {
+    "author": "Lena W.",
+    "rating": 4,
+    "text": "Noticeable improvement after fitting."
+   },
+   {
+    "author": "Carlos R.",
+    "rating": 4,
+    "text": "Exactly as described."
+   },
+   {
+    "author": "Alex M.",
+    "rating": 3,
+    "text": "Perfect fit, installed in under an hour."
+   }
+  ],
+  "inStock": true,
+  "alt": "a close up of a red car with trees in the background"
+ },
+ {
+  "id": "jump-starter",
+  "name": "Portable Jump Starter 12V",
+  "brand": "Varta",
+  "category": "accessories",
+  "price": 79,
+  "oldPrice": 99,
+  "images": [
+   "/images/products/jump-starter-1.jpg",
+   "/images/products/jump-starter-2.jpg",
+   "/images/products/jump-starter-3.jpg"
+  ],
+  "description": "Portable Jump Starter 12V by Varta. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Peak": "1500 A",
+   "USB": "Yes"
+  },
+  "compatibility": [],
+  "universal": true,
+  "rating": 4.6,
+  "reviews": [
+   {
+    "author": "Carlos R.",
+    "rating": 5,
+    "text": "Exactly as described."
+   },
+   {
+    "author": "Alex M.",
+    "rating": 5,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 4,
+    "text": "Great quality for the price."
+   }
+  ],
+  "inStock": true,
+  "alt": "Close-up of a red car interior with black seats"
+ },
+ {
+  "id": "tyre-inflator",
+  "name": "Digital Tyre Inflator",
+  "brand": "Philips",
+  "category": "accessories",
+  "price": 34.5,
+  "images": [
+   "/images/products/tyre-inflator-1.jpg",
+   "/images/products/tyre-inflator-2.jpg",
+   "/images/products/tyre-inflator-3.jpg"
+  ],
+  "description": "Digital Tyre Inflator by Philips. OE-quality replacement engineered for reliable everyday performance, easy fitting and long service life. Backed by our exact-fit guarantee.",
+  "specs": {
+   "Max pressure": "10 bar",
+   "Power": "12 V"
+  },
+  "compatibility": [],
+  "universal": true,
+  "rating": 4.5,
+  "reviews": [
+   {
+    "author": "Alex M.",
+    "rating": 5,
+    "text": "Perfect fit, installed in under an hour."
+   },
+   {
+    "author": "Priya S.",
+    "rating": 5,
+    "text": "Great quality for the price."
+   },
+   {
+    "author": "Tom K.",
+    "rating": 4,
+    "text": "Arrived fast and well packed."
+   }
+  ],
+  "inStock": true,
+  "alt": "A close up of a cell phone on a table"
+ }
+]

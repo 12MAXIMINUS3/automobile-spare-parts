@@ -1,0 +1,24 @@
+[
+  { "name": "Toyota", "models": [
+    { "name": "Corolla", "yearFrom": 2012, "yearTo": 2022, "fuels": ["Petrol 1.6", "Petrol 1.8", "Hybrid 1.8"] },
+    { "name": "Camry", "yearFrom": 2012, "yearTo": 2022, "fuels": ["Petrol 2.5", "Hybrid 2.5"] },
+    { "name": "Yaris", "yearFrom": 2014, "yearTo": 2022, "fuels": ["Petrol 1.0", "Petrol 1.5"] }
+  ]},
+  { "name": "Volkswagen", "models": [
+    { "name": "Golf", "yearFrom": 2012, "yearTo": 2022, "fuels": ["Petrol 1.4 TSI", "Diesel 2.0 TDI"] },
+    { "name": "Passat", "yearFrom": 2012, "yearTo": 2021, "fuels": ["Petrol 1.8 TSI", "Diesel 2.0 TDI"] },
+    { "name": "Polo", "yearFrom": 2014, "yearTo": 2022, "fuels": ["Petrol 1.0", "Diesel 1.6 TDI"] }
+  ]},
+  { "name": "Ford", "models": [
+    { "name": "Focus", "yearFrom": 2012, "yearTo": 2020, "fuels": ["Petrol 1.0 EcoBoost", "Diesel 1.5 TDCi"] },
+    { "name": "Fiesta", "yearFrom": 2012, "yearTo": 2021, "fuels": ["Petrol 1.0 EcoBoost", "Petrol 1.25"] }
+  ]},
+  { "name": "Honda", "models": [
+    { "name": "Civic", "yearFrom": 2012, "yearTo": 2022, "fuels": ["Petrol 1.5 Turbo", "Petrol 1.8"] },
+    { "name": "Accord", "yearFrom": 2013, "yearTo": 2022, "fuels": ["Petrol 2.0", "Hybrid 2.0"] }
+  ]},
+  { "name": "BMW", "models": [
+    { "name": "3 Series", "yearFrom": 2012, "yearTo": 2022, "fuels": ["Petrol 2.0", "Diesel 2.0"] },
+    { "name": "X3", "yearFrom": 2013, "yearTo": 2022, "fuels": ["Petrol 2.0", "Diesel 2.0"] }
+  ]}
+]

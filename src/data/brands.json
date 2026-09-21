@@ -1,0 +1,6 @@
+[
+  {"id":"bosch","name":"Bosch"},{"id":"brembo","name":"Brembo"},{"id":"valeo","name":"Valeo"},
+  {"id":"sachs","name":"Sachs"},{"id":"mann","name":"Mann-Filter"},{"id":"castrol","name":"Castrol"},
+  {"id":"ngk","name":"NGK"},{"id":"philips","name":"Philips"},{"id":"gates","name":"Gates"},
+  {"id":"varta","name":"Varta"},{"id":"monroe","name":"Monroe"},{"id":"ate","name":"ATE"}
+]
