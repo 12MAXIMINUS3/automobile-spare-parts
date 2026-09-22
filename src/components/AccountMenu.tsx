@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { LogOut, User, X } from "lucide-react";
+import { LayoutDashboard, LogOut, User, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { useIsAdmin } from "../lib/admin";
 import { useStore } from "../context/StoreContext";
 
 /**
@@ -11,6 +13,7 @@ import { useStore } from "../context/StoreContext";
 export default function AccountMenu({ className = "" }: { className?: string }) {
   const { user, isAnonymous, signIn, signUp, signOut } = useAuth();
   const { toast } = useStore();
+  const { isAdmin } = useIsAdmin();
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState<"in" | "up">("in");
   const [email, setEmail] = useState("");
@@ -58,6 +61,12 @@ export default function AccountMenu({ className = "" }: { className?: string }) 
                 <>
                   <p className="text-xs text-zinc-500">Signed in as</p>
                   <p className="truncate font-semibold">{user?.email}</p>
+                  {isAdmin && (
+                    <Link to="/admin" onClick={() => setOpen(false)}
+                      className="mt-3 flex w-full items-center justify-center gap-2 rounded-lg bg-zinc-900 py-2 text-sm font-semibold text-white transition hover:bg-orange-500 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-orange-500 dark:hover:text-white">
+                      <LayoutDashboard className="h-4 w-4" /> Admin dashboard
+                    </Link>
+                  )}
                   <button
                     onClick={async () => { await signOut(); setOpen(false); toast("Signed out", "info"); }}
                     className="mt-3 flex w-full items-center justify-center gap-2 rounded-lg border border-zinc-300 py-2 text-sm font-medium transition hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
