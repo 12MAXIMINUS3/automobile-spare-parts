@@ -22,8 +22,12 @@ export interface Product {
   specs: Record<string, string>;
   compatibility: CompatEntry[]; // empty + universal=true => fits everything
   universal?: boolean;
+  /** Which storefront aisle the product belongs to; absent means car parts. */
+  department?: "auto" | "golf";
   rating: number;
   reviews: { author: string; rating: number; text: string }[];
+  /** Total reviews in the database; cards show this without loading the bodies. */
+  reviewCount?: number;
   inStock: boolean;
   dealOfDay?: boolean;
 }

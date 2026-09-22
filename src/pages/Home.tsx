@@ -99,7 +99,7 @@ function Categories() {
 
 function Deals() {
   const { addToCart, products } = useStore();
-  const deals = products.filter((p) => p.dealOfDay).slice(0, 3);
+  const deals = products.filter((p) => p.dealOfDay && p.department !== "golf").slice(0, 3);
   return (
     <section className="mx-auto mt-20 max-w-7xl px-4">
       <SectionTitle title="Deal of the day" sub="Limited-time prices on customer favourites." />
@@ -178,7 +178,7 @@ function Benefits() {
 
 export default function Home() {
   const { products } = useStore();
-  const popular = products.filter((p) => p.rating >= 4.7).slice(0, 4);
+  const popular = products.filter((p) => p.rating >= 4.7 && p.department !== "golf").slice(0, 4);
   return (
     <>
       <Hero />

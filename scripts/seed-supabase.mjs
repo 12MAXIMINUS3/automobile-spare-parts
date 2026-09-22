@@ -17,7 +17,7 @@ const read = (f) => JSON.parse(fs.readFileSync(new URL(`../src/data/${f}`, impor
 const categories = read("categories.json");
 const brands = read("brands.json");
 const vehicles = read("vehicles.json");
-const products = read("products.json");
+const products = [...read("products.json"), ...read("golf-products.json")];
 
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -50,7 +50,8 @@ const reviewRows = products.flatMap((p) =>
   (p.reviews ?? []).map((r) => ({ product_id: p.id, author: r.author, rating: r.rating, body: r.text })));
 
 // brand ids in products must exist in brands
-const brandRows = brands.map((b) => ({ id: slug(b.name), name: b.name }));
+// golf aisle brands live only in the golf catalogue, so derive brands from both
+const brandRows = [...new Map([...brands.map((b) => b.name), ...products.map((p) => p.brand)].map((n) => [slug(n), { id: slug(n), name: n }])).values()];
 const missing = [...new Set(productRows.map((p) => p.brand_id))].filter((id) => !brandRows.some((b) => b.id === id));
 if (missing.length) { console.error("products reference unknown brands:", missing); process.exit(1); }
 

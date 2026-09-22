@@ -6,7 +6,7 @@
  * either way so callers never branch on the source.
  */
 import type { Product, Vehicle } from "../types";
-import { PRODUCTS } from "./data";
+import { ALL_PRODUCTS, PRODUCTS } from "./data";
 import { isCompatible } from "./compat";
 import { isSupabaseEnabled, supabase } from "./supabase";
 
@@ -15,8 +15,9 @@ interface ProductRow {
   id: string; name: string; price: number; old_price: number | null;
   description: string; specs: Record<string, string>; rating: number;
   in_stock: boolean; deal_of_day: boolean; universal: boolean; alt: string | null;
-  brand: string; category_id: string; images: string[];
+  brand: string; category_id: string; department: "auto" | "golf"; images: string[];
   compatibility: { make: string; model: string; yearFrom: number; yearTo: number; fuels: string[] | null }[];
+  review_count: number;
 }
 
 const toProduct = (r: ProductRow): Product => ({
@@ -24,6 +25,7 @@ const toProduct = (r: ProductRow): Product => ({
   name: r.name,
   brand: r.brand,
   category: r.category_id,
+  department: r.department ?? "auto",
   price: Number(r.price),
   ...(r.old_price != null ? { oldPrice: Number(r.old_price) } : {}),
   images: r.images ?? [],
@@ -36,22 +38,23 @@ const toProduct = (r: ProductRow): Product => ({
   })),
   universal: r.universal,
   rating: Number(r.rating),
-  reviews: [], // loaded separately by the detail page
+  reviews: [], // bodies are loaded separately by the detail page
+  reviewCount: Number(r.review_count ?? 0),
   inStock: r.in_stock,
   ...(r.deal_of_day ? { dealOfDay: true } : {}),
 });
 
 export async function fetchProducts(): Promise<Product[]> {
-  if (!isSupabaseEnabled || !supabase) return PRODUCTS;
+  if (!isSupabaseEnabled || !supabase) return ALL_PRODUCTS;
   const { data, error } = await supabase.from("products_full").select("*");
-  if (error) { console.warn("Supabase unavailable, using mock data:", error.message); return PRODUCTS; }
+  if (error) { console.warn("Supabase unavailable, using mock data:", error.message); return ALL_PRODUCTS; }
   return (data as ProductRow[]).map(toProduct);
 }
 
 export async function fetchProduct(id: string): Promise<Product | null> {
-  if (!isSupabaseEnabled || !supabase) return PRODUCTS.find((p) => p.id === id) ?? null;
+  if (!isSupabaseEnabled || !supabase) return ALL_PRODUCTS.find((p) => p.id === id) ?? null;
   const { data, error } = await supabase.from("products_full").select("*").eq("id", id).maybeSingle();
-  if (error || !data) return PRODUCTS.find((p) => p.id === id) ?? null;
+  if (error || !data) return ALL_PRODUCTS.find((p) => p.id === id) ?? null;
   const product = toProduct(data as ProductRow);
   const { data: reviews } = await supabase
     .from("reviews").select("author, rating, body").eq("product_id", id)

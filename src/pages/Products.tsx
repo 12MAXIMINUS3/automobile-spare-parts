@@ -36,6 +36,7 @@ export default function Products() {
 
   const results = useMemo(() => {
     const list = products.filter((p) =>
+      p.department !== "golf" && // golf accessories have their own page
       (!q || `${p.name} ${p.brand} ${p.category}`.toLowerCase().includes(q)) &&
       (!onlyWishlist || wishlist.includes(p.id)) &&
       (!filters.categories.length || filters.categories.includes(p.category)) &&

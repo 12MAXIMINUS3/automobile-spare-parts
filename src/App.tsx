@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Toaster from "./components/Toaster";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
+import GolfCarts from "./pages/GolfCarts";
 import Home from "./pages/Home";
 import ProductDetail from "./pages/ProductDetail";
 import Products from "./pages/Products";
@@ -26,6 +27,7 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
               <Route path="/product/:id" element={<ProductDetail />} />
+              <Route path="/golf-carts" element={<GolfCarts />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/admin" element={<AdminLayout />}>

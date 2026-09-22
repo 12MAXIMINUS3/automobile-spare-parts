@@ -1,0 +1,7 @@
+[
+  { "id": "golf-lighting",  "name": "Lighting",           "icon": "lightbulb", "blurb": "Light bars, headlights & underglow" },
+  { "id": "golf-tops",      "name": "Tops & Windshields", "icon": "umbrella",  "blurb": "Canopies, roofs & folding screens" },
+  { "id": "golf-seats",     "name": "Seats & Storage",    "icon": "armchair",  "blurb": "Covers, rear seats & cargo boxes" },
+  { "id": "golf-dash",      "name": "Dash & Interior",    "icon": "gauge",     "blurb": "Dash kits, holders & floor mats" },
+  { "id": "golf-exterior",  "name": "Mirrors & Exterior", "icon": "car-front", "blurb": "Mirrors, trim & body accents" }
+]

@@ -47,7 +47,7 @@ export default function ProductCard({ product: p, compact = false }: { product: 
         <Link to={`/product/${p.id}`} className={`mt-0.5 font-semibold leading-snug hover:text-orange-500 ${compact ? "line-clamp-2 text-sm" : "line-clamp-2 text-[15px]"}`}>
           {p.name}
         </Link>
-        <div className="mt-1.5"><Stars value={p.rating} count={p.reviews.length} /></div>
+        <div className="mt-1.5"><Stars value={p.rating} count={p.reviewCount ?? p.reviews.length} /></div>
         <div className="mt-auto pt-3">
           <div className="flex items-baseline gap-2">
             <span className="text-lg font-extrabold">{money(p.price)}</span>

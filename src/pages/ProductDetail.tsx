@@ -8,11 +8,12 @@ import { Skeleton } from "../components/Skeleton";
 import Stars from "../components/Stars";
 import { useStore } from "../context/StoreContext";
 import { discountPct, isCompatible, money } from "../lib/compat";
-import { CATEGORIES } from "../lib/data";
+import { CATEGORIES, GOLF_CATEGORIES } from "../lib/data";
 import { fetchProduct } from "../lib/catalog";
 import type { Product } from "../types";
 
 const TABS = ["Description", "Specifications", "Compatibility", "Reviews"] as const;
+const GOLF_TABS = ["Description", "Specifications", "Reviews"] as const;
 
 function PdpSkeleton() {
   return (
@@ -52,7 +53,8 @@ export default function ProductDetail() {
   const fits = isCompatible(p, vehicle);
   const saved = wishlist.includes(p.id);
   const pct = discountPct(p);
-  const category = CATEGORIES.find((c) => c.id === p.category);
+  // categories span both departments, so look in each
+  const category = [...CATEGORIES, ...GOLF_CATEGORIES].find((c) => c.id === p.category);
   const related = products.filter((x) => x.category === p.category && x.id !== p.id).slice(0, 4);
   const fitsSummary = p.universal ? "Universal — fits all vehicles" : p.compatibility.map((c) => `${c.yearFrom}–${c.yearTo} ${c.make} ${c.model}${c.fuels ? ` (${c.fuels.join(", ")})` : ""}`);
 
@@ -61,7 +63,7 @@ export default function ProductDetail() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
       <nav className="mb-6 text-sm text-zinc-500">
-        <Link to="/" className="hover:text-orange-500">Home</Link> / <Link to={`/products?category=${p.category}`} className="hover:text-orange-500">{category?.name}</Link> / <span className="text-zinc-900 dark:text-zinc-100">{p.name}</span>
+        <Link to="/" className="hover:text-orange-500">Home</Link> / <Link to={p.department === "golf" ? "/golf-carts" : `/products?category=${p.category}`} className="hover:text-orange-500">{category?.name}</Link> / <span className="text-zinc-900 dark:text-zinc-100">{p.name}</span>
       </nav>
 
       <div className="grid gap-10 md:grid-cols-2">
@@ -70,7 +72,7 @@ export default function ProductDetail() {
         <div>
           <Link to={`/products?brand=${p.brand}`} className="text-sm font-semibold uppercase tracking-wide text-orange-500">{p.brand}</Link>
           <h1 className="mt-1 text-2xl font-extrabold leading-tight sm:text-3xl">{p.name}</h1>
-          <div className="mt-2"><Stars value={p.rating} count={p.reviews.length} /></div>
+          <div className="mt-2"><Stars value={p.rating} count={p.reviewCount ?? p.reviews.length} /></div>
 
           <div className="mt-5 flex items-baseline gap-3">
             <span className="text-4xl font-extrabold">{money(p.price)}</span>
@@ -83,16 +85,19 @@ export default function ProductDetail() {
 
           <p className="mt-4 text-zinc-600 dark:text-zinc-300">{p.description}</p>
 
-          {/* Compatibility banner reflects the globally selected vehicle */}
-          <div className={`mt-5 flex items-start gap-3 rounded-xl p-4 text-sm ${!vehicle ? "bg-zinc-100 dark:bg-zinc-900" : fits ? "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400" : "bg-amber-500/10 text-amber-700 dark:text-amber-400"}`}>
-            {vehicle ? (fits ? <BadgeCheck className="mt-0.5 h-5 w-5 shrink-0" /> : <TriangleAlert className="mt-0.5 h-5 w-5 shrink-0" />) : null}
-            <div>
-              {!vehicle ? <p>Select your vehicle in the header to check if this part fits.</p>
-                : fits ? <p className="font-semibold">Fits your {vehicle.year} {vehicle.make} {vehicle.model} ({vehicle.fuel})</p>
-                : <p className="font-semibold">This part does not fit your {vehicle.year} {vehicle.make} {vehicle.model}.</p>}
-              <p className="mt-1 opacity-80">Fits: {Array.isArray(fitsSummary) ? fitsSummary.slice(0, 2).join("; ") + (fitsSummary.length > 2 ? ` +${fitsSummary.length - 2} more` : "") : fitsSummary}</p>
+          {/* Vehicle fitment is a car-parts concept; accessories skip it entirely. */}
+          {p.department !== "golf" && (
+            <div className={`mt-5 flex items-start gap-3 rounded-xl p-4 text-sm ${!vehicle ? "bg-zinc-100 dark:bg-zinc-900" : fits ? "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400" : "bg-amber-500/10 text-amber-700 dark:text-amber-400"}`}>
+              {vehicle ? (fits ? <BadgeCheck className="mt-0.5 h-5 w-5 shrink-0" /> : <TriangleAlert className="mt-0.5 h-5 w-5 shrink-0" />) : null}
+              <div>
+                {!vehicle ? <p>Select your vehicle in the header to check if this part fits.</p>
+                  : fits ? <p className="font-semibold">Fits your {vehicle.year} {vehicle.make} {vehicle.model} ({vehicle.fuel})</p>
+                  : <p className="font-semibold">This part does not fit your {vehicle.year} {vehicle.make} {vehicle.model}.</p>}
+                <p className="mt-1 opacity-80">Fits: {Array.isArray(fitsSummary) ? fitsSummary.slice(0, 2).join("; ") + (fitsSummary.length > 2 ? ` +${fitsSummary.length - 2} more` : "") : fitsSummary}</p>
+              </div>
             </div>
-          </div>
+
+          )}
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <div className="flex items-center rounded-xl border border-zinc-300 dark:border-zinc-700">
@@ -126,9 +131,9 @@ export default function ProductDetail() {
       {/* Tabs — animated underline via shared layoutId, content cross-fades */}
       <section className="mt-14">
         <div className="flex gap-1 overflow-x-auto border-b border-zinc-200 dark:border-zinc-800">
-          {TABS.map((t) => (
+          {(p.department === "golf" ? GOLF_TABS : TABS).map((t) => (
             <button key={t} onClick={() => setTab(t)} className={`relative whitespace-nowrap px-4 py-3 text-sm font-semibold transition ${tab === t ? "text-orange-500" : "text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100"}`}>
-              {t}{t === "Reviews" && ` (${p.reviews.length})`}
+              {t}{t === "Reviews" && ` (${p.reviewCount ?? p.reviews.length})`}
               {tab === t && <motion.span layoutId="tab-underline" className="absolute inset-x-0 -bottom-px h-0.5 bg-orange-500" />}
             </button>
           ))}

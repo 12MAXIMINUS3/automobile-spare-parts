@@ -1,0 +1,806 @@
+[
+ {
+  "id": "gc-led-bar",
+  "name": "LED Light Bar Kit 24\"",
+  "brand": "GreenLine",
+  "category": "golf-lighting",
+  "price": 129,
+  "oldPrice": 159,
+  "images": [
+   "/images/golf/gc-led-bar-1.jpg",
+   "/images/golf/gc-led-bar-2.jpg",
+   "/images/golf/gc-led-bar-3.jpg"
+  ],
+  "alt": "A glowing car headlight with a bright LED strip against a dark background",
+  "description": "LED Light Bar Kit 24\" from GreenLine. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Length": "24 in",
+   "Output": "7200 lm",
+   "Voltage": "12-48 V",
+   "Rating": "IP67"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.8,
+  "inStock": true,
+  "dealOfDay": true,
+  "reviews": [
+   {
+    "author": "Dana P.",
+    "rating": 5,
+    "text": "Fitted my cart in twenty minutes."
+   },
+   {
+    "author": "Mo K.",
+    "rating": 5,
+    "text": "Looks far better than the stock part."
+   },
+   {
+    "author": "Ruth A.",
+    "rating": 4,
+    "text": "Solid build, no rattles on rough paths."
+   }
+  ]
+ },
+ {
+  "id": "gc-headlight-kit",
+  "name": "Halo Headlight & Tail Light Kit",
+  "brand": "Fairway Pro",
+  "category": "golf-lighting",
+  "price": 94.5,
+  "images": [
+   "/images/golf/gc-headlight-kit-1.jpg",
+   "/images/golf/gc-headlight-kit-2.jpg",
+   "/images/golf/gc-headlight-kit-3.jpg"
+  ],
+  "alt": "A close-up of a car's headlight",
+  "description": "Halo Headlight & Tail Light Kit from Fairway Pro. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Includes": "2 front, 2 rear",
+   "Voltage": "12 V",
+   "Type": "LED halo"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.6,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Mo K.",
+    "rating": 5,
+    "text": "Looks far better than the stock part."
+   },
+   {
+    "author": "Ruth A.",
+    "rating": 5,
+    "text": "Solid build, no rattles on rough paths."
+   },
+   {
+    "author": "Sean D.",
+    "rating": 4,
+    "text": "Exactly as pictured."
+   }
+  ]
+ },
+ {
+  "id": "gc-underglow",
+  "name": "Underglow Strip Set - RGB",
+  "brand": "LinksGear",
+  "category": "golf-lighting",
+  "price": 59.9,
+  "oldPrice": 74.9,
+  "images": [
+   "/images/golf/gc-underglow-1.jpg",
+   "/images/golf/gc-underglow-2.jpg",
+   "/images/golf/gc-underglow-3.jpg"
+  ],
+  "alt": "Close-up of a modern car headlight at night",
+  "description": "Underglow Strip Set - RGB from LinksGear. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Length": "4 x 900 mm",
+   "Control": "App + remote",
+   "Colours": "16M"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.4,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Ruth A.",
+    "rating": 4,
+    "text": "Solid build, no rattles on rough paths."
+   },
+   {
+    "author": "Sean D.",
+    "rating": 4,
+    "text": "Exactly as pictured."
+   },
+   {
+    "author": "Ivy L.",
+    "rating": 3,
+    "text": "Great value for the money."
+   }
+  ]
+ },
+ {
+  "id": "gc-light-bezel",
+  "name": "Chrome Headlight Bezel Pair",
+  "brand": "CaddyTech",
+  "category": "golf-lighting",
+  "price": 32,
+  "images": [
+   "/images/golf/gc-light-bezel-1.jpg",
+   "/images/golf/gc-light-bezel-2.jpg",
+   "/images/golf/gc-light-bezel-3.jpg"
+  ],
+  "alt": "Old car's front headlight and bumper in black and white",
+  "description": "Chrome Headlight Bezel Pair from CaddyTech. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Finish": "Chrome ABS",
+   "Fitment": "Universal"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.2,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Sean D.",
+    "rating": 4,
+    "text": "Exactly as pictured."
+   },
+   {
+    "author": "Ivy L.",
+    "rating": 4,
+    "text": "Great value for the money."
+   },
+   {
+    "author": "Dana P.",
+    "rating": 3,
+    "text": "Fitted my cart in twenty minutes."
+   }
+  ]
+ },
+ {
+  "id": "gc-canopy-80",
+  "name": "Extended Canopy Top 80\"",
+  "brand": "Fairway Pro",
+  "category": "golf-tops",
+  "price": 239,
+  "oldPrice": 289,
+  "images": [
+   "/images/golf/gc-canopy-80-1.jpg",
+   "/images/golf/gc-canopy-80-2.jpg",
+   "/images/golf/gc-canopy-80-3.jpg"
+  ],
+  "alt": "a car with a broken windshield",
+  "description": "Extended Canopy Top 80\" from Fairway Pro. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Length": "80 in",
+   "Material": "Fibreglass",
+   "Colour": "Sandstone"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.7,
+  "inStock": true,
+  "dealOfDay": true,
+  "reviews": [
+   {
+    "author": "Ivy L.",
+    "rating": 5,
+    "text": "Great value for the money."
+   },
+   {
+    "author": "Dana P.",
+    "rating": 5,
+    "text": "Fitted my cart in twenty minutes."
+   },
+   {
+    "author": "Mo K.",
+    "rating": 4,
+    "text": "Looks far better than the stock part."
+   }
+  ]
+ },
+ {
+  "id": "gc-windshield-fold",
+  "name": "Folding Acrylic Windshield",
+  "brand": "GreenLine",
+  "category": "golf-tops",
+  "price": 149,
+  "images": [
+   "/images/golf/gc-windshield-fold-1.jpg",
+   "/images/golf/gc-windshield-fold-2.jpg",
+   "/images/golf/gc-windshield-fold-3.jpg"
+  ],
+  "alt": "Black suv with roof rack parked near fence",
+  "description": "Folding Acrylic Windshield from GreenLine. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Material": "4 mm acrylic",
+   "Style": "Fold-down",
+   "Tint": "Clear"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.5,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Dana P.",
+    "rating": 5,
+    "text": "Fitted my cart in twenty minutes."
+   },
+   {
+    "author": "Mo K.",
+    "rating": 5,
+    "text": "Looks far better than the stock part."
+   },
+   {
+    "author": "Ruth A.",
+    "rating": 4,
+    "text": "Solid build, no rattles on rough paths."
+   }
+  ]
+ },
+ {
+  "id": "gc-rain-enclosure",
+  "name": "4-Passenger Rain Enclosure",
+  "brand": "LinksGear",
+  "category": "golf-tops",
+  "price": 179.9,
+  "oldPrice": 219,
+  "images": [
+   "/images/golf/gc-rain-enclosure-1.jpg",
+   "/images/golf/gc-rain-enclosure-2.jpg",
+   "/images/golf/gc-rain-enclosure-3.jpg"
+  ],
+  "alt": "a close up of a red car with trees in the background",
+  "description": "4-Passenger Rain Enclosure from LinksGear. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Fits": "80 in tops",
+   "Material": "PVC / mesh",
+   "Zips": "Heavy duty"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.3,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Mo K.",
+    "rating": 4,
+    "text": "Looks far better than the stock part."
+   },
+   {
+    "author": "Ruth A.",
+    "rating": 4,
+    "text": "Solid build, no rattles on rough paths."
+   },
+   {
+    "author": "Sean D.",
+    "rating": 3,
+    "text": "Exactly as pictured."
+   }
+  ]
+ },
+ {
+  "id": "gc-top-struts",
+  "name": "Canopy Support Strut Set",
+  "brand": "CaddyTech",
+  "category": "golf-tops",
+  "price": 48,
+  "images": [
+   "/images/golf/gc-top-struts-1.jpg",
+   "/images/golf/gc-top-struts-2.jpg",
+   "/images/golf/gc-top-struts-3.jpg"
+  ],
+  "alt": "a close up of a steering wheel",
+  "description": "Canopy Support Strut Set from CaddyTech. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Pieces": "4",
+   "Material": "Powder-coated steel"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.1,
+  "inStock": false,
+  "reviews": [
+   {
+    "author": "Ruth A.",
+    "rating": 4,
+    "text": "Solid build, no rattles on rough paths."
+   },
+   {
+    "author": "Sean D.",
+    "rating": 4,
+    "text": "Exactly as pictured."
+   },
+   {
+    "author": "Ivy L.",
+    "rating": 3,
+    "text": "Great value for the money."
+   }
+  ]
+ },
+ {
+  "id": "gc-seat-covers",
+  "name": "Premium Seat Cover Set",
+  "brand": "GreenLine",
+  "category": "golf-seats",
+  "price": 89,
+  "oldPrice": 109,
+  "images": [
+   "/images/golf/gc-seat-covers-1.jpg",
+   "/images/golf/gc-seat-covers-2.jpg",
+   "/images/golf/gc-seat-covers-3.jpg"
+  ],
+  "alt": "Luxurious car interior with leather seats and dashboard",
+  "description": "Premium Seat Cover Set from GreenLine. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Material": "Marine vinyl",
+   "Fits": "Front bench",
+   "Colours": "Two-tone"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.8,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Sean D.",
+    "rating": 5,
+    "text": "Exactly as pictured."
+   },
+   {
+    "author": "Ivy L.",
+    "rating": 5,
+    "text": "Great value for the money."
+   },
+   {
+    "author": "Dana P.",
+    "rating": 4,
+    "text": "Fitted my cart in twenty minutes."
+   }
+  ]
+ },
+ {
+  "id": "gc-rear-seat",
+  "name": "Flip-Down Rear Seat Kit",
+  "brand": "Fairway Pro",
+  "category": "golf-seats",
+  "price": 349,
+  "images": [
+   "/images/golf/gc-rear-seat-1.jpg",
+   "/images/golf/gc-rear-seat-2.jpg",
+   "/images/golf/gc-rear-seat-3.jpg"
+  ],
+  "alt": "Close-up of textured brown leather with highlights",
+  "description": "Flip-Down Rear Seat Kit from Fairway Pro. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Capacity": "2 passengers",
+   "Includes": "Grab bar, footrest"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.6,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Ivy L.",
+    "rating": 5,
+    "text": "Great value for the money."
+   },
+   {
+    "author": "Dana P.",
+    "rating": 5,
+    "text": "Fitted my cart in twenty minutes."
+   },
+   {
+    "author": "Mo K.",
+    "rating": 4,
+    "text": "Looks far better than the stock part."
+   }
+  ]
+ },
+ {
+  "id": "gc-cargo-box",
+  "name": "Lockable Cargo Box 60L",
+  "brand": "LinksGear",
+  "category": "golf-seats",
+  "price": 74.5,
+  "oldPrice": 92,
+  "images": [
+   "/images/golf/gc-cargo-box-1.jpg",
+   "/images/golf/gc-cargo-box-2.jpg",
+   "/images/golf/gc-cargo-box-3.jpg"
+  ],
+  "alt": "a blue and yellow plastic box with cartoon characters on it",
+  "description": "Lockable Cargo Box 60L from LinksGear. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Volume": "60 L",
+   "Lock": "Keyed",
+   "Mount": "Rear rack"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.4,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Dana P.",
+    "rating": 4,
+    "text": "Fitted my cart in twenty minutes."
+   },
+   {
+    "author": "Mo K.",
+    "rating": 4,
+    "text": "Looks far better than the stock part."
+   },
+   {
+    "author": "Ruth A.",
+    "rating": 3,
+    "text": "Solid build, no rattles on rough paths."
+   }
+  ]
+ },
+ {
+  "id": "gc-cooler-mount",
+  "name": "Cooler Bracket & Bag",
+  "brand": "CaddyTech",
+  "category": "golf-seats",
+  "price": 42.9,
+  "images": [
+   "/images/golf/gc-cooler-mount-1.jpg",
+   "/images/golf/gc-cooler-mount-2.jpg",
+   "/images/golf/gc-cooler-mount-3.jpg"
+  ],
+  "alt": "A red seat on a train next to a window",
+  "description": "Cooler Bracket & Bag from CaddyTech. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Capacity": "12 cans",
+   "Mount": "Bolt-on"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.3,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Mo K.",
+    "rating": 4,
+    "text": "Looks far better than the stock part."
+   },
+   {
+    "author": "Ruth A.",
+    "rating": 4,
+    "text": "Solid build, no rattles on rough paths."
+   },
+   {
+    "author": "Sean D.",
+    "rating": 3,
+    "text": "Exactly as pictured."
+   }
+  ]
+ },
+ {
+  "id": "gc-dash-kit",
+  "name": "Carbon-Look Dash Trim Kit",
+  "brand": "GreenLine",
+  "category": "golf-dash",
+  "price": 68,
+  "oldPrice": 82,
+  "images": [
+   "/images/golf/gc-dash-kit-1.jpg",
+   "/images/golf/gc-dash-kit-2.jpg",
+   "/images/golf/gc-dash-kit-3.jpg"
+  ],
+  "alt": "the interior of a car with a steering wheel and dashboard",
+  "description": "Carbon-Look Dash Trim Kit from GreenLine. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Finish": "Carbon weave",
+   "Pieces": "6",
+   "Adhesive": "3M"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.5,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Ruth A.",
+    "rating": 5,
+    "text": "Solid build, no rattles on rough paths."
+   },
+   {
+    "author": "Sean D.",
+    "rating": 5,
+    "text": "Exactly as pictured."
+   },
+   {
+    "author": "Ivy L.",
+    "rating": 4,
+    "text": "Great value for the money."
+   }
+  ]
+ },
+ {
+  "id": "gc-phone-mount",
+  "name": "Locking Phone & GPS Mount",
+  "brand": "CaddyTech",
+  "category": "golf-dash",
+  "price": 27.9,
+  "images": [
+   "/images/golf/gc-phone-mount-1.jpg",
+   "/images/golf/gc-phone-mount-2.jpg",
+   "/images/golf/gc-phone-mount-3.jpg"
+  ],
+  "alt": "Interior of a classic red car's dashboard",
+  "description": "Locking Phone & GPS Mount from CaddyTech. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Fits": "Up to 7 in",
+   "Rotation": "360 deg"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.7,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Sean D.",
+    "rating": 5,
+    "text": "Exactly as pictured."
+   },
+   {
+    "author": "Ivy L.",
+    "rating": 5,
+    "text": "Great value for the money."
+   },
+   {
+    "author": "Dana P.",
+    "rating": 4,
+    "text": "Fitted my cart in twenty minutes."
+   }
+  ]
+ },
+ {
+  "id": "gc-usb-panel",
+  "name": "Dual USB-C Charge Panel",
+  "brand": "Fairway Pro",
+  "category": "golf-dash",
+  "price": 39,
+  "oldPrice": 49,
+  "images": [
+   "/images/golf/gc-usb-panel-1.jpg",
+   "/images/golf/gc-usb-panel-2.jpg",
+   "/images/golf/gc-usb-panel-3.jpg"
+  ],
+  "alt": "The red steering wheel and dashboard of a vintage Chevrolet Corvette",
+  "description": "Dual USB-C Charge Panel from Fairway Pro. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Output": "45 W total",
+   "Ports": "2 x USB-C",
+   "Cutout": "Round 28 mm"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.6,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Ivy L.",
+    "rating": 5,
+    "text": "Great value for the money."
+   },
+   {
+    "author": "Dana P.",
+    "rating": 5,
+    "text": "Fitted my cart in twenty minutes."
+   },
+   {
+    "author": "Mo K.",
+    "rating": 4,
+    "text": "Looks far better than the stock part."
+   }
+  ]
+ },
+ {
+  "id": "gc-floor-mat",
+  "name": "All-Weather Floor Mat",
+  "brand": "LinksGear",
+  "category": "golf-dash",
+  "price": 54,
+  "images": [
+   "/images/golf/gc-floor-mat-1.jpg",
+   "/images/golf/gc-floor-mat-2.jpg",
+   "/images/golf/gc-floor-mat-3.jpg"
+  ],
+  "alt": "The interior of a car with a steering wheel",
+  "description": "All-Weather Floor Mat from LinksGear. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Material": "Diamond-plate rubber",
+   "Trim": "Cut to fit"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.4,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Dana P.",
+    "rating": 4,
+    "text": "Fitted my cart in twenty minutes."
+   },
+   {
+    "author": "Mo K.",
+    "rating": 4,
+    "text": "Looks far better than the stock part."
+   },
+   {
+    "author": "Ruth A.",
+    "rating": 3,
+    "text": "Solid build, no rattles on rough paths."
+   }
+  ]
+ },
+ {
+  "id": "gc-mirror-wide",
+  "name": "Wide-Angle Rear View Mirror",
+  "brand": "CaddyTech",
+  "category": "golf-exterior",
+  "price": 34.9,
+  "oldPrice": 44,
+  "images": [
+   "/images/golf/gc-mirror-wide-1.jpg",
+   "/images/golf/gc-mirror-wide-2.jpg",
+   "/images/golf/gc-mirror-wide-3.jpg"
+  ],
+  "alt": "a rear view mirror on a car reflecting a sunset",
+  "description": "Wide-Angle Rear View Mirror from CaddyTech. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Width": "16.5 in",
+   "Mount": "Clamp-on",
+   "Glass": "Convex"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.6,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Mo K.",
+    "rating": 5,
+    "text": "Looks far better than the stock part."
+   },
+   {
+    "author": "Ruth A.",
+    "rating": 5,
+    "text": "Solid build, no rattles on rough paths."
+   },
+   {
+    "author": "Sean D.",
+    "rating": 4,
+    "text": "Exactly as pictured."
+   }
+  ]
+ },
+ {
+  "id": "gc-side-mirrors",
+  "name": "Folding Side Mirror Pair",
+  "brand": "GreenLine",
+  "category": "golf-exterior",
+  "price": 49.9,
+  "images": [
+   "/images/golf/gc-side-mirrors-1.jpg",
+   "/images/golf/gc-side-mirrors-2.jpg",
+   "/images/golf/gc-side-mirrors-3.jpg"
+  ],
+  "alt": "Abstract metallic chrome waves pattern",
+  "description": "Folding Side Mirror Pair from GreenLine. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Pieces": "2",
+   "Adjust": "Folding arm"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.5,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Ruth A.",
+    "rating": 5,
+    "text": "Solid build, no rattles on rough paths."
+   },
+   {
+    "author": "Sean D.",
+    "rating": 5,
+    "text": "Exactly as pictured."
+   },
+   {
+    "author": "Ivy L.",
+    "rating": 4,
+    "text": "Great value for the money."
+   }
+  ]
+ },
+ {
+  "id": "gc-fender-flares",
+  "name": "Fender Flare Set",
+  "brand": "Fairway Pro",
+  "category": "golf-exterior",
+  "price": 79,
+  "oldPrice": 95,
+  "images": [
+   "/images/golf/gc-fender-flares-1.jpg",
+   "/images/golf/gc-fender-flares-2.jpg",
+   "/images/golf/gc-fender-flares-3.jpg"
+  ],
+  "alt": "Close-up of a vintage orange car's tail light",
+  "description": "Fender Flare Set from Fairway Pro. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Pieces": "4",
+   "Material": "Textured ABS"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.2,
+  "inStock": true,
+  "reviews": [
+   {
+    "author": "Sean D.",
+    "rating": 4,
+    "text": "Exactly as pictured."
+   },
+   {
+    "author": "Ivy L.",
+    "rating": 4,
+    "text": "Great value for the money."
+   },
+   {
+    "author": "Dana P.",
+    "rating": 3,
+    "text": "Fitted my cart in twenty minutes."
+   }
+  ]
+ },
+ {
+  "id": "gc-diamond-plate",
+  "name": "Diamond Plate Rocker Panels",
+  "brand": "LinksGear",
+  "category": "golf-exterior",
+  "price": 64,
+  "images": [
+   "/images/golf/gc-diamond-plate-1.jpg",
+   "/images/golf/gc-diamond-plate-2.jpg",
+   "/images/golf/gc-diamond-plate-3.jpg"
+  ],
+  "alt": "a close up of a red sports car",
+  "description": "Diamond Plate Rocker Panels from LinksGear. Built for golf carts and low-speed vehicles, with a bolt-on fit, weatherproof materials and all mounting hardware included.",
+  "specs": {
+   "Finish": "Polished aluminium",
+   "Pieces": "2"
+  },
+  "compatibility": [],
+  "universal": false,
+  "rating": 4.3,
+  "inStock": false,
+  "reviews": [
+   {
+    "author": "Ivy L.",
+    "rating": 4,
+    "text": "Great value for the money."
+   },
+   {
+    "author": "Dana P.",
+    "rating": 4,
+    "text": "Fitted my cart in twenty minutes."
+   },
+   {
+    "author": "Mo K.",
+    "rating": 3,
+    "text": "Looks far better than the stock part."
+   }
+  ]
+ }
+]

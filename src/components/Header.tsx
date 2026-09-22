@@ -79,7 +79,11 @@ function Badge({ n }: { n: number }) {
 export default function Header() {
   const { cartCount, wishlist, dark, toggleDark } = useStore();
   const [menu, setMenu] = useState(false);
-  const navLinks = [{ to: "/products", label: "All parts" }, ...CATEGORIES.slice(0, 5).map((c) => ({ to: `/products?category=${c.id}`, label: c.name }))];
+  const navLinks = [
+    { to: "/products", label: "All parts" },
+    ...CATEGORIES.slice(0, 4).map((c) => ({ to: `/products?category=${c.id}`, label: c.name })),
+    { to: "/golf-carts", label: "Golf carts" },
+  ];
 
   return (
     <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/85 backdrop-blur-lg dark:border-zinc-800 dark:bg-zinc-950/85">
