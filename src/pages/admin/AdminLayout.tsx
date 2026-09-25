@@ -28,19 +28,42 @@ export default function AdminLayout() {
 
   if (!isAdmin) {
     return (
-      <div className="mx-auto max-w-md px-4 py-28 text-center">
+      <div className="mx-auto max-w-md px-4 py-24 text-center">
         <ShieldAlert className="mx-auto mb-4 h-12 w-12 text-amber-500" />
         <h1 className="text-2xl font-extrabold">Admin access required</h1>
         <p className="mt-2 text-sm text-zinc-500">
           {!user || isAnonymous
-            ? "Sign in with an admin account to open the dashboard."
+            ? "Sign in with an admin account or use the Quick Access demo login below."
             : "This account does not have admin rights."}
         </p>
-        <p className="mt-4 rounded-lg bg-zinc-100 p-3 text-left font-mono text-xs text-zinc-600 dark:bg-zinc-900 dark:text-zinc-400">
-          node scripts/grant-admin.mjs you@email.com yourpassword
+        
+        <div className="mt-6 rounded-2xl border border-zinc-200 bg-zinc-50 p-5 text-left dark:border-zinc-800 dark:bg-zinc-900/50">
+          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-500">Demo Credentials</p>
+          <div className="mt-2 text-sm">
+            <p><span className="text-zinc-400">Email:</span> <code className="font-mono font-bold text-orange-500">admin@autoparts.com</code></p>
+            <p><span className="text-zinc-400">Password:</span> <code className="font-mono font-bold text-orange-500">admin123</code></p>
+          </div>
+        </div>
+
+        <button
+          onClick={() => {
+            localStorage.setItem("demo_admin", "true");
+            window.location.reload();
+          }}
+          className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-3.5 font-bold text-white shadow-lg shadow-orange-500/25 transition-all hover:scale-[1.02] hover:shadow-orange-500/40 active:scale-[0.98]"
+        >
+          🔑 Click to Enter Demo Admin Dashboard
+        </button>
+
+        <p className="mt-4 text-xs text-zinc-400">
+          Or grant admin rights to your Supabase user:
+          <code className="mt-1 block rounded bg-zinc-100 p-2 font-mono text-[11px] text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
+            node scripts/grant-admin.mjs you@email.com password
+          </code>
         </p>
-        <Link to="/" className="mt-6 inline-block rounded-xl bg-orange-500 px-6 py-3 font-semibold text-white hover:bg-orange-600">
-          Back to the shop
+
+        <Link to="/" className="mt-6 inline-block text-sm font-medium text-zinc-500 hover:text-orange-500 hover:underline">
+          ← Back to store
         </Link>
       </div>
     );
