@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { BarChart3, Boxes, Loader2, Package, ShieldAlert } from "lucide-react";
+import { BarChart3, Boxes, Loader2, Package, PlusCircle, ShieldAlert } from "lucide-react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { useIsAdmin } from "../../lib/admin";
@@ -7,6 +7,7 @@ import { useIsAdmin } from "../../lib/admin";
 const tabs = [
   { to: "/admin", end: true, label: "Overview", icon: BarChart3 },
   { to: "/admin/products", label: "Products", icon: Boxes },
+  { to: "/admin/add-product", label: "Upload Product", icon: PlusCircle },
   { to: "/admin/orders", label: "Orders", icon: Package },
 ];
 

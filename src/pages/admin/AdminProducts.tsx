@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Check, Loader2, Search, X } from "lucide-react";
+import { Check, Loader2, PlusCircle, Search, Trash2, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import ProductImage from "../../components/ProductImage";
 import { useStore } from "../../context/StoreContext";
 import { updateProduct } from "../../lib/admin";
@@ -9,7 +10,7 @@ import type { Product } from "../../types";
 
 /** Inline editor for one product. Saves only the fields that actually changed. */
 function Row({ p, onSaved }: { p: Product; onSaved: (patch: Partial<Product>) => void }) {
-  const { toast } = useStore();
+  const { toast, deleteProduct, updateProductInStore } = useStore();
   const [editing, setEditing] = useState(false);
   const [price, setPrice] = useState(String(p.price));
   const [inStock, setInStock] = useState(p.inStock);
@@ -26,12 +27,19 @@ function Row({ p, onSaved }: { p: Product; onSaved: (patch: Partial<Product>) =>
     setBusy(false);
     if (err) return toast(err, "error");
     onSaved({ price: n, inStock, dealOfDay: deal });
+    updateProductInStore(p.id, { price: n, inStock, dealOfDay: deal });
     setEditing(false);
     toast("Product updated");
   };
 
   const cancel = () => {
     setPrice(String(p.price)); setInStock(p.inStock); setDeal(Boolean(p.dealOfDay)); setEditing(false);
+  };
+
+  const handleDelete = () => {
+    if (confirm(`Are you sure you want to delete "${p.name}"?`)) {
+      deleteProduct(p.id);
+    }
   };
 
   return (
@@ -80,11 +88,16 @@ function Row({ p, onSaved }: { p: Product; onSaved: (patch: Partial<Product>) =>
               </button>
             </motion.div>
           ) : (
-            <motion.button key="view" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              onClick={() => setEditing(true)}
-              className="rounded-lg border border-zinc-300 px-3 py-1.5 text-xs font-semibold transition hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800">
-              Edit
-            </motion.button>
+            <div className="flex justify-end items-center gap-1.5">
+              <motion.button key="view" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                onClick={() => setEditing(true)}
+                className="rounded-lg border border-zinc-300 px-3 py-1.5 text-xs font-semibold transition hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800">
+                Edit
+              </motion.button>
+              <button onClick={handleDelete} className="rounded-lg p-1.5 text-zinc-400 hover:bg-rose-500/10 hover:text-rose-600" title="Delete Product">
+                <Trash2 className="h-4 w-4" />
+              </button>
+            </div>
           )}
         </AnimatePresence>
       </td>
@@ -95,7 +108,6 @@ function Row({ p, onSaved }: { p: Product; onSaved: (patch: Partial<Product>) =>
 export default function AdminProducts() {
   const { products } = useStore();
   const [q, setQ] = useState("");
-  // local overlay of saved edits, so the table reflects changes without a refetch
   const [patches, setPatches] = useState<Record<string, Partial<Product>>>({});
 
   const rows = useMemo(() => {
@@ -107,12 +119,22 @@ export default function AdminProducts() {
 
   return (
     <div>
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm text-zinc-500">{rows.length} of {products.length} products</p>
-        <div className="relative">
-          <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400" />
-          <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter products…"
-            className="w-64 rounded-lg border border-zinc-300 py-2 pl-9 pr-3 text-sm outline-none focus:border-orange-500 dark:border-zinc-700 dark:bg-zinc-900" />
+      <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <p className="text-sm font-medium text-zinc-500">{rows.length} of {products.length} products</p>
+        </div>
+        <div className="flex flex-wrap items-center gap-3">
+          <div className="relative">
+            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400" />
+            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter products…"
+              className="w-64 rounded-xl border border-zinc-300 py-2 pl-9 pr-3 text-sm outline-none focus:border-orange-500 dark:border-zinc-700 dark:bg-zinc-900" />
+          </div>
+          <Link
+            to="/admin/add-product"
+            className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 px-4 py-2 text-sm font-bold text-white shadow-md transition hover:scale-[1.02] hover:shadow-lg hover:shadow-orange-500/25"
+          >
+            <PlusCircle className="h-4 w-4" /> Upload New Product
+          </Link>
         </div>
       </div>
 

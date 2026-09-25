@@ -9,6 +9,7 @@ import GolfCarts from "./pages/GolfCarts";
 import Home from "./pages/Home";
 import ProductDetail from "./pages/ProductDetail";
 import Products from "./pages/Products";
+import AdminAddProduct from "./pages/admin/AdminAddProduct";
 import AdminLayout from "./pages/admin/AdminLayout";
 import AdminOrders from "./pages/admin/AdminOrders";
 import AdminProducts from "./pages/admin/AdminProducts";
@@ -33,6 +34,7 @@ export default function App() {
               <Route path="/admin" element={<AdminLayout />}>
                 <Route index element={<Overview />} />
                 <Route path="products" element={<AdminProducts />} />
+                <Route path="add-product" element={<AdminAddProduct />} />
                 <Route path="orders" element={<AdminOrders />} />
               </Route>
               <Route path="*" element={<div className="py-32 text-center text-lg font-semibold">Page not found</div>} />

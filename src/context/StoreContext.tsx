@@ -25,6 +25,9 @@ interface Store {
   toggleDark: () => void;
   toasts: Toast[];
   toast: (message: string, tone?: Toast["tone"]) => void;
+  addProduct: (newProd: Omit<Product, "id"> & { id?: string }) => Promise<Product>;
+  deleteProduct: (id: string) => Promise<void>;
+  updateProductInStore: (id: string, patch: Partial<Product>) => void;
 }
 
 const Ctx = createContext<Store | null>(null);
@@ -55,7 +58,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const [wishlist, setWishlist] = usePersisted<string[]>("ap.wishlist", []);
   const [dark, setDark] = usePersisted<boolean>("ap.dark", false);
   const [toasts, setToasts] = useState<Toast[]>([]);
-  const [products, setProducts] = useState<Product[]>(PRODUCTS);
+  const [customProducts, setCustomProducts] = usePersisted<Product[]>("ap.custom_products", []);
+  const [products, setProducts] = useState<Product[]>(() => [...customProducts, ...PRODUCTS]);
   const [productsLoading, setProductsLoading] = useState(isSupabaseEnabled);
   const synced = useRef(false); // guards the one-time local -> remote migration
 
@@ -67,12 +71,19 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     setTimeout(() => setToasts((t) => t.filter((x) => x.id !== id)), 2600);
   }, []);
 
-  // Catalogue: Supabase when configured, bundled JSON otherwise.
+  // Catalogue: Supabase when configured, bundled JSON + custom uploaded products otherwise.
   useEffect(() => {
     let cancelled = false;
-    fetchProducts().then((p) => { if (!cancelled) { setProducts(p); setProductsLoading(false); } });
+    fetchProducts().then((p) => {
+      if (!cancelled) {
+        const existingIds = new Set(p.map((x) => x.id));
+        const uniqueCustoms = customProducts.filter((c) => !existingIds.has(c.id));
+        setProducts([...uniqueCustoms, ...p]);
+        setProductsLoading(false);
+      }
+    });
     return () => { cancelled = true; };
-  }, []);
+  }, [customProducts]);
 
   /**
    * Cart/wishlist sync. On first authenticated load the remote rows win, except
@@ -100,11 +111,66 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     })();
   }, [ready, user, cart, wishlist, setCart, setWishlist]);
 
+  const addProduct = useCallback(async (newProd: Omit<Product, "id"> & { id?: string }): Promise<Product> => {
+    const id = newProd.id || `prod_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`;
+    const created: Product = {
+      ...newProd,
+      id,
+      rating: newProd.rating ?? 5.0,
+      reviews: newProd.reviews ?? [],
+      reviewCount: newProd.reviewCount ?? 1,
+      inStock: newProd.inStock ?? true,
+      specs: newProd.specs ?? {},
+      compatibility: newProd.compatibility ?? [],
+      images: newProd.images?.length ? newProd.images : ["https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80"]
+    };
+
+    setCustomProducts((prev) => [created, ...prev]);
+    setProducts((prev) => [created, ...prev.filter((p) => p.id !== id)]);
+
+    if (supabase) {
+      try {
+        await supabase.from("products").insert({
+          id,
+          name: created.name,
+          brand: created.brand,
+          category_id: created.category,
+          department: created.department ?? "auto",
+          price: created.price,
+          old_price: created.oldPrice ?? null,
+          description: created.description,
+          specs: created.specs,
+          rating: created.rating,
+          in_stock: created.inStock,
+          deal_of_day: Boolean(created.dealOfDay),
+          universal: Boolean(created.universal)
+        });
+      } catch (err) {
+        console.warn("Supabase insert error:", err);
+      }
+    }
+
+    toast(`Product "${created.name}" uploaded successfully!`);
+    return created;
+  }, [setCustomProducts, toast]);
+
+  const deleteProduct = useCallback(async (id: string) => {
+    setCustomProducts((prev) => prev.filter((p) => p.id !== id));
+    setProducts((prev) => prev.filter((p) => p.id !== id));
+    if (supabase) {
+      try { await supabase.from("products").delete().eq("id", id); } catch { /* ignore */ }
+    }
+    toast("Product deleted", "info");
+  }, [setCustomProducts, toast]);
+
+  const updateProductInStore = useCallback((id: string, patch: Partial<Product>) => {
+    setCustomProducts((prev) => prev.map((p) => (p.id === id ? { ...p, ...patch } : p)));
+    setProducts((prev) => prev.map((p) => (p.id === id ? { ...p, ...patch } : p)));
+  }, [setCustomProducts]);
+
   const value = useMemo<Store>(() => {
     const priceOf = (id: string) => products.find((p) => p.id === id)?.price ?? 0;
     const uid = user?.id;
-    // Remote writes are best-effort: the UI already updated, so a failure only
-    // costs persistence, and we say so rather than silently dropping it.
     const push = (op: PromiseLike<{ error: { message: string } | null }> | null) => {
       if (!op) return;
       Promise.resolve(op).then(({ error }) => error && toast("Could not save to your account", "error"));
@@ -150,8 +216,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       },
       dark, toggleDark: () => setDark((d) => !d),
       toasts, toast,
+      addProduct,
+      deleteProduct,
+      updateProductInStore
     };
-  }, [products, productsLoading, vehicle, cart, wishlist, dark, toasts, toast, user, setVehicle, setCart, setWishlist, setDark]);
+  }, [products, productsLoading, vehicle, cart, wishlist, dark, toasts, toast, user, setVehicle, setCart, setWishlist, setDark, addProduct, deleteProduct, updateProductInStore]);
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }
