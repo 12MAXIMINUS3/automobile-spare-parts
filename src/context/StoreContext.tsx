@@ -130,12 +130,16 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
     if (supabase) {
       try {
-        await supabase.from("products").insert({
+        const brandSlug = created.brand.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "generic";
+        // 1. Ensure brand exists in public.brands
+        await supabase.from("brands").upsert({ id: brandSlug, name: created.brand });
+
+        // 2. Insert main product row
+        await supabase.from("products").upsert({
           id,
           name: created.name,
-          brand: created.brand,
+          brand_id: brandSlug,
           category_id: created.category,
-          department: created.department ?? "auto",
           price: created.price,
           old_price: created.oldPrice ?? null,
           description: created.description,
@@ -145,8 +149,31 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           deal_of_day: Boolean(created.dealOfDay),
           universal: Boolean(created.universal)
         });
+
+        // 3. Insert product images into public.product_images
+        if (created.images && created.images.length > 0) {
+          const imageRows = created.images.map((url, i) => ({
+            product_id: id,
+            url,
+            alt: i === 0 ? created.name : null,
+            position: i
+          }));
+          await supabase.from("product_images").upsert(imageRows);
+        }
+
+        // 4. Insert compatibility entries into public.product_compatibility
+        if (created.compatibility && created.compatibility.length > 0) {
+          const compatRows = created.compatibility.map((c) => ({
+            product_id: id,
+            make: c.make,
+            model: c.model,
+            year_from: c.yearFrom,
+            year_to: c.yearTo
+          }));
+          await supabase.from("product_compatibility").upsert(compatRows);
+        }
       } catch (err) {
-        console.warn("Supabase insert error:", err);
+        console.warn("Supabase online insert error:", err);
       }
     }
 
@@ -158,7 +185,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     setCustomProducts((prev) => prev.filter((p) => p.id !== id));
     setProducts((prev) => prev.filter((p) => p.id !== id));
     if (supabase) {
-      try { await supabase.from("products").delete().eq("id", id); } catch { /* ignore */ }
+      try {
+        await supabase.from("product_compatibility").delete().eq("product_id", id);
+        await supabase.from("product_images").delete().eq("product_id", id);
+        await supabase.from("reviews").delete().eq("product_id", id);
+        await supabase.from("products").delete().eq("id", id);
+      } catch (err) {
+        console.warn("Supabase delete error:", err);
+      }
     }
     toast("Product deleted", "info");
   }, [setCustomProducts, toast]);
